@@ -1,118 +1,141 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// Ảnh nền cho từng gói
+const PLAN_PHOTOS = {
+  explorer: 'https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?q=80&w=600&auto=format&fit=crop',   // Phố Cổ Hà Nội
+  traveler: 'https://images.unsplash.com/photo-1599708153386-62bf23145451?q=80&w=600&auto=format&fit=crop',   // Hồ Gươm
+  pro: 'https://images.unsplash.com/photo-1569441941693-91fe0d15acb0?q=80&w=600&auto=format&fit=crop',         // Văn Miếu
+};
+
 const plans = [
   {
     name: 'Explorer',
+    photo: PLAN_PHOTOS.explorer,
     price: { monthly: 0, yearly: 0 },
-    desc: 'Perfect for first-time visitors and casual explorers.',
-    color: '#6B7280',
-    border: '#E5E7EB',
-    bg: '#F9FAFB',
-    cta: 'Start Free',
-    ctaClass: 'btn-gray',
+    desc: 'Hoàn hảo cho du khách lần đầu và những người thích khám phá tự do.',
+    color: '#FFD700',
+    cta: 'Dùng Miễn Phí',
+    ctaStyle: { background: 'rgba(255,215,0,0.15)', border: '1.5px solid #FFD700', color: '#FFD700' },
     features: [
-      { text: '5 AI itineraries/month', included: true },
-      { text: 'Basic map access', included: true },
-      { text: '100 verified locations', included: true },
-      { text: 'Community prices', included: true },
-      { text: 'Offline map', included: false },
-      { text: 'Priority AI responses', included: false },
+      { text: '5 lịch trình AI/tháng', included: true },
+      { text: 'Bản đồ cơ bản', included: true },
+      { text: '100 địa điểm đã xác minh', included: true },
+      { text: 'Giá cộng đồng', included: true },
+      { text: 'Bản đồ offline', included: false },
+      { text: 'AI phản hồi ưu tiên', included: false },
     ],
   },
   {
     name: 'Traveler',
+    photo: PLAN_PHOTOS.traveler,
     price: { monthly: 99000, yearly: 79000 },
-    desc: 'For frequent visitors who want the full Hanoi experience.',
-    color: '#1A56DB',
-    border: '#1A56DB',
-    bg: '#fff',
-    cta: 'Get Traveler',
-    ctaClass: 'btn-primary',
+    desc: 'Cho du khách thường xuyên muốn trải nghiệm Hà Nội toàn diện nhất.',
+    color: '#FF8C00',
     popular: true,
+    cta: 'Chọn Traveler',
+    ctaStyle: { background: 'linear-gradient(135deg,#D4A017,#FF8C00)', border: 'none', color: '#fff', boxShadow: '0 8px 24px rgba(212,160,23,0.4)' },
     features: [
-      { text: 'Unlimited AI itineraries', included: true },
-      { text: 'Full interactive map', included: true },
-      { text: '500+ verified locations', included: true },
-      { text: 'Real-time prices', included: true },
-      { text: 'Offline map access', included: true },
-      { text: 'Priority AI responses', included: false },
+      { text: 'Lịch trình AI không giới hạn', included: true },
+      { text: 'Bản đồ tương tác đầy đủ', included: true },
+      { text: '500+ địa điểm đã xác minh', included: true },
+      { text: 'Giá thời gian thực', included: true },
+      { text: 'Bản đồ offline', included: true },
+      { text: 'AI phản hồi ưu tiên', included: false },
     ],
   },
   {
     name: 'Pro Local',
+    photo: PLAN_PHOTOS.pro,
     price: { monthly: 199000, yearly: 159000 },
-    desc: 'For travel guides, bloggers, and Hanoi enthusiasts.',
-    color: '#7C3AED',
-    border: '#7C3AED',
-    bg: '#fff',
+    desc: 'Dành cho hướng dẫn viên, blogger và những người yêu Hà Nội thực thụ.',
+    color: '#A78BFA',
     cta: 'Go Pro',
-    ctaClass: 'btn-purple',
+    ctaStyle: { background: 'rgba(167,139,250,0.15)', border: '1.5px solid #A78BFA', color: '#A78BFA' },
     features: [
-      { text: 'Everything in Traveler', included: true },
-      { text: 'Priority AI responses', included: true },
-      { text: 'API access', included: true },
-      { text: 'Custom itinerary exports', included: true },
-      { text: 'Early access to features', included: true },
-      { text: 'Dedicated support', included: true },
+      { text: 'Mọi thứ của Traveler', included: true },
+      { text: 'AI phản hồi ưu tiên', included: true },
+      { text: 'Truy cập API', included: true },
+      { text: 'Xuất lịch trình tuỳ chỉnh', included: true },
+      { text: 'Truy cập sớm tính năng mới', included: true },
+      { text: 'Hỗ trợ riêng', included: true },
     ],
   },
 ];
 
 const PricingSection = () => {
   const [yearly, setYearly] = useState(false);
-  const fmt = (n) => n === 0 ? 'Free' : n.toLocaleString('vi-VN') + 'đ';
+  const fmt = (n) => n === 0 ? 'Miễn Phí' : n.toLocaleString('vi-VN') + 'đ';
 
   return (
-    <section id="pricing" className="section" style={{ background: 'rgba(249, 250, 251, 0.85)', backdropFilter: 'blur(12px)' }}>
+    <section id="pricing" style={{ padding: '80px 0', background: 'transparent' }}>
       <div className="container">
-        <div className="section-header reveal">
-          <span className="badge badge-orange" style={{ marginBottom: 14 }}>💰 Pricing</span>
-          <h2>Simple, Transparent Pricing</h2>
-          <p style={{ marginTop: 14 }}>Start free. Upgrade when you're ready. No hidden fees, ever.</p>
+        <div className="section-header reveal" style={{ marginBottom: 60 }}>
+          <span className="badge" style={{ marginBottom: 14, background: 'rgba(212,160,23,0.15)', color: '#D4A017', borderColor: 'rgba(212,160,23,0.3)' }}>💰 Gói Dịch Vụ</span>
+          <h2 style={{ color: '#fff' }}>Đơn Giản, Minh Bạch</h2>
+          <p style={{ color: 'rgba(255,255,255,0.7)', marginTop: 14 }}>Bắt đầu miễn phí. Nâng cấp khi bạn sẵn sàng. Không phí ẩn.</p>
           {/* Toggle */}
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 14, marginTop: 24, background: '#fff', border: '1px solid #E5E7EB', borderRadius: 50, padding: '6px 6px 6px 18px', boxShadow: '0 2px 8px rgba(0,0,0,.06)' }}>
-            <span style={{ fontSize: '.88rem', fontWeight: 500, color: !yearly ? '#111827' : '#9CA3AF' }}>Monthly</span>
-            <button onClick={() => setYearly(!yearly)} style={{ width: 48, height: 26, borderRadius: 13, background: yearly ? '#1A56DB' : '#E5E7EB', border: 'none', cursor: 'pointer', position: 'relative', transition: 'background .25s ease', flexShrink: 0 }}>
-              <span style={{ position: 'absolute', top: 3, left: yearly ? 24 : 3, width: 20, height: 20, background: '#fff', borderRadius: '50%', transition: 'left .25s ease', display: 'block', boxShadow: '0 1px 4px rgba(0,0,0,.15)' }} />
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 14, marginTop: 24, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 50, padding: '6px 6px 6px 18px', backdropFilter: 'blur(8px)' }}>
+            <span style={{ fontSize: '.88rem', fontWeight: 500, color: !yearly ? '#FFD700' : 'rgba(255,255,255,0.4)' }}>Hàng tháng</span>
+            <button onClick={() => setYearly(!yearly)} style={{ width: 48, height: 26, borderRadius: 13, background: yearly ? '#D4A017' : 'rgba(255,255,255,0.2)', border: 'none', cursor: 'pointer', position: 'relative', transition: 'background .25s ease', flexShrink: 0 }}>
+              <span style={{ position: 'absolute', top: 3, left: yearly ? 24 : 3, width: 20, height: 20, background: '#fff', borderRadius: '50%', transition: 'left .25s ease', display: 'block', boxShadow: '0 1px 4px rgba(0,0,0,.3)' }} />
             </button>
-            <span style={{ fontSize: '.88rem', fontWeight: 500, color: yearly ? '#111827' : '#9CA3AF' }}>Yearly</span>
-            {yearly && <span style={{ background: '#ECFDF5', color: '#059669', fontSize: '.72rem', fontWeight: 700, padding: '3px 10px', borderRadius: 50, border: '1px solid rgba(5,150,105,.2)', marginRight: 6 }}>Save 20%</span>}
+            <span style={{ fontSize: '.88rem', fontWeight: 500, color: yearly ? '#FFD700' : 'rgba(255,255,255,0.4)' }}>Hàng năm</span>
+            {yearly && <span style={{ background: 'rgba(16,185,129,0.2)', color: '#10B981', fontSize: '.72rem', fontWeight: 700, padding: '3px 10px', borderRadius: 50, border: '1px solid rgba(16,185,129,0.3)', marginRight: 6 }}>Giảm 20%</span>}
           </div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 24, alignItems: 'start' }}>
           {plans.map((p, i) => (
-            <div key={i} className="reveal" style={{ background: p.bg, border: `2px solid ${p.popular ? p.border : p.border}`, borderRadius: 24, padding: '32px 28px', position: 'relative', boxShadow: p.popular ? `0 16px 48px ${p.color}20` : 'none', transform: p.popular ? 'scale(1.03)' : 'none', animationDelay: `${i * 0.1}s` }}>
-              {p.popular && (
-                <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: p.color, color: '#fff', fontSize: '.75rem', fontWeight: 700, padding: '6px 18px', borderRadius: 50, whiteSpace: 'nowrap', boxShadow: `0 4px 12px ${p.color}40` }}>
-                  ⭐ Most Popular
+            <div key={i} className="reveal" style={{
+              borderRadius: 20, overflow: 'hidden',
+              border: p.popular ? `2px solid ${p.color}` : '1px solid rgba(255,255,255,0.1)',
+              boxShadow: p.popular ? `0 20px 60px rgba(212,160,23,0.25)` : '0 8px 24px rgba(0,0,0,0.3)',
+              transform: p.popular ? 'scale(1.03)' : 'none',
+              animationDelay: `${i * 0.1}s`,
+              transition: 'transform 0.3s ease',
+            }}>
+              {/* Photo header */}
+              <div style={{ position: 'relative', height: 150, overflow: 'hidden' }}>
+                <img src={p.photo} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.75) 100%)' }} />
+                {p.popular && (
+                  <div style={{ position: 'absolute', top: 14, left: '50%', transform: 'translateX(-50%)', background: p.color, color: '#000', fontSize: '.72rem', fontWeight: 700, padding: '5px 16px', borderRadius: 50, whiteSpace: 'nowrap', boxShadow: `0 4px 12px ${p.color}60` }}>
+                    ⭐ Phổ Biến Nhất
+                  </div>
+                )}
+                <div style={{ position: 'absolute', bottom: 14, left: 20 }}>
+                  <div style={{ fontSize: '.75rem', fontWeight: 700, color: p.color, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 2 }}>{p.name}</div>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 4 }}>
+                    <span style={{ fontSize: 'clamp(1.6rem,3vw,2rem)', fontWeight: 900, color: '#fff', fontFamily: "'Plus Jakarta Sans',sans-serif" }}>
+                      {fmt(yearly ? p.price.yearly : p.price.monthly)}
+                    </span>
+                    {p.price.monthly > 0 && <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '.82rem' }}>/tháng</span>}
+                  </div>
                 </div>
-              )}
-              <div style={{ fontSize: '.82rem', fontWeight: 700, color: p.color, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 8 }}>{p.name}</div>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: 4, marginBottom: 8 }}>
-                <span style={{ fontSize: 'clamp(2rem,4vw,2.6rem)', fontWeight: 900, color: '#111827', fontFamily: "'Plus Jakarta Sans',sans-serif", letterSpacing: '-0.03em' }}>
-                  {fmt(yearly ? p.price.yearly : p.price.monthly)}
-                </span>
-                {p.price.monthly > 0 && <span style={{ color: '#9CA3AF', fontSize: '.88rem' }}>/month</span>}
               </div>
-              <p style={{ color: '#6B7280', fontSize: '.85rem', lineHeight: 1.6, marginBottom: 24, minHeight: 40 }}>{p.desc}</p>
-              <div style={{ height: 1, background: '#E5E7EB', marginBottom: 24 }} />
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 28 }}>
-                {p.features.map((f, j) => (
-                  <li key={j} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: '.88rem', color: f.included ? '#374151' : '#D1D5DB' }}>
-                    <span style={{ color: f.included ? p.color : '#D1D5DB', fontWeight: 700, fontSize: '1rem', flexShrink: 0 }}>{f.included ? '✓' : '✗'}</span>
-                    {f.text}
-                  </li>
-                ))}
-              </ul>
-              <Link to="/planner" className={`btn ${p.ctaClass}`} style={{ width: '100%', justifyContent: 'center' }}>{p.cta}</Link>
+              {/* Content */}
+              <div style={{ background: 'rgba(10,15,35,0.85)', backdropFilter: 'blur(12px)', padding: '20px 24px 28px' }}>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '.84rem', lineHeight: 1.65, marginBottom: 20 }}>{p.desc}</p>
+                <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 20 }} />
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 11, marginBottom: 24 }}>
+                  {p.features.map((f, j) => (
+                    <li key={j} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: '.85rem', color: f.included ? 'rgba(255,255,255,0.85)' : 'rgba(255,255,255,0.25)' }}>
+                      <span style={{ color: f.included ? p.color : 'rgba(255,255,255,0.2)', fontWeight: 700, fontSize: '1rem', flexShrink: 0 }}>{f.included ? '✓' : '✗'}</span>
+                      {f.text}
+                    </li>
+                  ))}
+                </ul>
+                <Link to="/planner" style={{ display: 'block', textAlign: 'center', padding: '13px', borderRadius: 12, fontWeight: 700, fontSize: '.9rem', cursor: 'pointer', textDecoration: 'none', transition: 'all 0.2s ease', ...p.ctaStyle }}>
+                  {p.cta}
+                </Link>
+              </div>
             </div>
           ))}
         </div>
 
-        <p className="reveal" style={{ textAlign: 'center', marginTop: 36, color: '#9CA3AF', fontSize: '.85rem' }}>
-          All plans include a 7-day free trial. No credit card required. Cancel anytime.
+        <p className="reveal" style={{ textAlign: 'center', marginTop: 36, color: 'rgba(255,255,255,0.4)', fontSize: '.85rem' }}>
+          Mọi gói đều có 7 ngày dùng thử miễn phí. Không cần thẻ tín dụng. Huỷ bất cứ lúc nào.
         </p>
       </div>
     </section>

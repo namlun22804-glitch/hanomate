@@ -21,10 +21,10 @@ const Navbar = () => {
   const logoColor = scrolled ? '#1A56DB' : isHome ? '#fff' : '#1A56DB';
 
   const navLinks = [
-    { label: 'Features', href: '#features' },
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'Reviews', href: '#reviews' },
+    { label: 'Tính Năng', href: '/#features' },
+    { label: 'Cách Hoạt Động', href: '/#how-it-works' },
+    { label: 'Bản Đồ 🗺️', href: '/map', isRoute: true },
+    { label: 'Giá Cả', href: '/#pricing' },
   ];
 
   return (
@@ -48,9 +48,15 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 2 }} className="hide-mobile">
-          {navLinks.map(l => (
+          {navLinks.map(l => l.isRoute ? (
+            <Link key={l.label} to={l.href} style={{ padding: '8px 16px', borderRadius: 50, fontWeight: 500, fontSize: '.88rem', color: textColor, transition: 'all .25s ease', textDecoration: 'none' }}
+              onMouseEnter={e => { e.currentTarget.style.color = '#D4A017'; e.currentTarget.style.background = 'rgba(212,160,23,.10)'; }}
+              onMouseLeave={e => { e.currentTarget.style.color = textColor; e.currentTarget.style.background = 'transparent'; }}>
+              {l.label}
+            </Link>
+          ) : (
             <a key={l.label} href={l.href} style={{ padding: '8px 16px', borderRadius: 50, fontWeight: 500, fontSize: '.88rem', color: textColor, transition: 'all .25s ease' }}
-              onMouseEnter={e => { e.currentTarget.style.color = '#1A56DB'; e.currentTarget.style.background = 'rgba(26,86,219,.06)'; }}
+              onMouseEnter={e => { e.currentTarget.style.color = '#D4A017'; e.currentTarget.style.background = 'rgba(212,160,23,.10)'; }}
               onMouseLeave={e => { e.currentTarget.style.color = textColor; e.currentTarget.style.background = 'transparent'; }}>
               {l.label}
             </a>

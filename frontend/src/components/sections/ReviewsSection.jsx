@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const reviews = [
-  { name: 'Sarah M.', role: 'Travel Blogger', country: '🇬🇧', avatar: 'SM', color: '#1A56DB', rating: 5, text: 'HanoMate completely transformed my Hanoi trip. The AI suggested a perfect 3-hour food tour in the Old Quarter that I never would have found on my own. The price transparency feature saved me from overpaying multiple times!' },
-  { name: 'Kenji T.', role: 'Solo Traveler', country: '🇯🇵', avatar: 'KT', color: '#7C3AED', rating: 5, text: 'As someone who doesn\'t speak Vietnamese, navigating Hanoi felt overwhelming until I found HanoMate. The AI understands context and local culture. It suggested egg coffee at Café Giang — a true hidden gem!' },
-  { name: 'Linh N.', role: 'Local Guide', country: '🇻🇳', avatar: 'LN', color: '#059669', rating: 5, text: 'Even as a Hanoian, I discovered new spots through this app! The community price reports are incredibly accurate. I\'ve been using it to plan tours for my clients and they love it.' },
-  { name: 'Marco R.', role: 'Food Enthusiast', country: '🇮🇹', avatar: 'MR', color: '#FF6F00', rating: 5, text: 'The best travel app I\'ve ever used. Planned a whole day in Hanoi in minutes — bún bò, bánh mì, phở, all with walking directions and real prices. Absolutely incredible technology!' },
-  { name: 'Emma L.', role: 'Digital Nomad', country: '🇺🇸', avatar: 'EL', color: '#1A56DB', rating: 5, text: 'I spent 2 weeks in Hanoi and used HanoMate every single day. The offline map feature is a lifesaver when you\'re in the alleyways with no signal. 10/10 would recommend to every traveler!' },
-  { name: 'Nadia K.', role: 'Backpacker', country: '🇩🇪', avatar: 'NK', color: '#7C3AED', rating: 5, text: 'Budget travel in Hanoi is so much easier with transparent pricing. I knew exactly what things should cost and never felt like I was being scammed. This app should be mandatory for every tourist!' },
+  { name: 'Sarah M.', role: 'Travel Blogger', country: '🇬🇧', avatar: 'SM', color: '#FFD700', rating: 5, text: 'HanoMate đã thay đổi hoàn toàn chuyến đi Hà Nội của tôi. AI gợi ý một tour ẩm thực 3 tiếng hoàn hảo ở Phố Cổ mà tôi không bao giờ tự tìm được. Tính năng minh bạch giá cả đã cứu tôi khỏi bị chặt chém nhiều lần!' },
+  { name: 'Kenji T.', role: 'Solo Traveler', country: '🇯🇵', avatar: 'KT', color: '#FF8C00', rating: 5, text: 'Là người không biết tiếng Việt, đi Hà Nội rất choáng ngợp cho đến khi tôi tìm thấy HanoMate. AI hiểu văn hoá địa phương. Nó gợi ý cà phê trứng tại Cà Phê Giảng — một viên ngọc ẩn thực sự!' },
+  { name: 'Linh N.', role: 'Hướng Dẫn Viên', country: '🇻🇳', avatar: 'LN', color: '#10B981', rating: 5, text: 'Dù là người Hà Nội gốc, tôi vẫn khám phá ra những địa điểm mới qua ứng dụng này! Báo cáo giá từ cộng đồng cực kỳ chính xác. Tôi dùng nó để lên kế hoạch tour cho khách và họ rất thích.' },
+  { name: 'Marco R.', role: 'Food Enthusiast', country: '🇮🇹', avatar: 'MR', color: '#A78BFA', rating: 5, text: 'App du lịch tốt nhất tôi từng dùng. Lên kế hoạch cả ngày ở Hà Nội trong vài phút — bún bò, bánh mì, phở, tất cả với chỉ đường đi bộ và giá thực tế. Công nghệ đỉnh cao tuyệt đối!' },
+  { name: 'Emma L.', role: 'Digital Nomad', country: '🇺🇸', avatar: 'EL', color: '#FFD700', rating: 5, text: 'Tôi ở Hà Nội 2 tuần và dùng HanoMate mỗi ngày. Tính năng bản đồ offline là cứu cánh khi bạn lọt vào ngõ hẻm không có sóng. 10/10 sẽ giới thiệu cho mọi du khách!' },
+  { name: 'Nadia K.', role: 'Backpacker', country: '🇩🇪', avatar: 'NK', color: '#FF8C00', rating: 5, text: 'Du lịch tiết kiệm ở Hà Nội dễ dàng hơn rất nhiều với tính năng minh bạch giá. Tôi biết chính xác mọi thứ đáng bao nhiêu tiền và không cảm thấy bị lừa bao giờ. App này nên bắt buộc với mọi khách du lịch!' },
 ];
 
 const Stars = ({ n }) => (
@@ -15,62 +15,65 @@ const Stars = ({ n }) => (
   </div>
 );
 
-const ReviewsSection = () => {
-  const [active, setActive] = useState(0);
-
-  return (
-    <section id="reviews" className="section" style={{ background: 'rgba(255, 255, 255, 0.85)', backdropFilter: 'blur(12px)' }}>
-      <div className="container">
-        <div className="section-header reveal">
-          <span className="badge badge-green" style={{ marginBottom: 14 }}>⭐ Reviews</span>
-          <h2>Loved by <span className="grad-blue">10,000+ Travelers</span></h2>
-          <p style={{ marginTop: 14 }}>From solo backpackers to travel bloggers — hear what they say about HanoMate.</p>
-        </div>
-
-        {/* Rating summary */}
-        <div className="reveal" style={{ display: 'flex', justifyContent: 'center', gap: 48, marginBottom: 56, flexWrap: 'wrap' }}>
-          {[['4.9', '★ App Rating', '#F59E0B'], ['10K+', 'Active Users', '#1A56DB'], ['98%', 'Satisfaction', '#059669']].map(([val, lbl, col]) => (
-            <div key={lbl} style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2.4rem', fontWeight: 900, color: col, fontFamily: "'Plus Jakarta Sans',sans-serif", letterSpacing: '-0.03em' }}>{val}</div>
-              <div style={{ fontSize: '.82rem', color: '#9CA3AF', fontWeight: 500, marginTop: 2 }}>{lbl}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Review grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 20 }}>
-          {reviews.map((r, i) => (
-            <div key={i} className="card reveal" style={{ padding: '28px 24px', cursor: 'default', animationDelay: `${i * 0.08}s` }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 14 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: '50%', background: `${r.color}18`, border: `2px solid ${r.color}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.82rem', color: r.color, flexShrink: 0 }}>
-                    {r.avatar}
-                  </div>
-                  <div>
-                    <div style={{ fontWeight: 700, fontSize: '.9rem', color: '#111827', display: 'flex', alignItems: 'center', gap: 6 }}>
-                      {r.name} <span>{r.country}</span>
-                    </div>
-                    <div style={{ fontSize: '.75rem', color: '#9CA3AF' }}>{r.role}</div>
-                  </div>
-                </div>
-                <Stars n={r.rating} />
-              </div>
-              <p style={{ color: '#4B5563', fontSize: '.88rem', lineHeight: 1.75, margin: 0 }}>"{r.text}"</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Trust bar */}
-        <div className="reveal" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 32, marginTop: 48, flexWrap: 'wrap' }}>
-          {['Featured in TechCrunch', 'Top App Vietnam 2025', 'Google AI Partner', 'Verified Reviews'].map(b => (
-            <div key={b} style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#9CA3AF', fontSize: '.82rem', fontWeight: 500 }}>
-              <span style={{ color: '#D1D5DB' }}>✦</span> {b}
-            </div>
-          ))}
-        </div>
+const ReviewsSection = () => (
+  <section id="reviews" style={{ padding: '80px 0', background: 'transparent' }}>
+    <div className="container">
+      <div className="section-header reveal" style={{ marginBottom: 48 }}>
+        <span className="badge" style={{ marginBottom: 14, background: 'rgba(212,160,23,0.15)', color: '#D4A017', borderColor: 'rgba(212,160,23,0.3)' }}>⭐ Đánh Giá</span>
+        <h2 style={{ color: '#fff' }}>Được Yêu Thích Bởi <span style={{ background: 'linear-gradient(135deg,#FFD700,#FF8C00)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>10,000+ Du Khách</span></h2>
+        <p style={{ color: 'rgba(255,255,255,0.7)', marginTop: 14 }}>Từ phượt thủ đơn độc đến blogger du lịch — nghe họ nói về HanoMate.</p>
       </div>
-    </section>
-  );
-};
+
+      {/* Stats */}
+      <div className="reveal" style={{ display: 'flex', justifyContent: 'center', gap: 56, marginBottom: 56, flexWrap: 'wrap' }}>
+        {[['4.9', '★ Đánh Giá', '#F59E0B'], ['10K+', 'Người Dùng', '#FFD700'], ['98%', 'Hài Lòng', '#10B981']].map(([val, lbl, col]) => (
+          <div key={lbl} style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '2.4rem', fontWeight: 900, color: col, fontFamily: "'Plus Jakarta Sans',sans-serif", letterSpacing: '-0.03em' }}>{val}</div>
+            <div style={{ fontSize: '.82rem', color: 'rgba(255,255,255,0.5)', fontWeight: 500, marginTop: 2 }}>{lbl}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Review grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 20 }}>
+        {reviews.map((r, i) => (
+          <div key={i} className="reveal" style={{
+            padding: '24px', animationDelay: `${i * 0.08}s`, borderRadius: 16,
+            background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)',
+            border: '1px solid rgba(255,255,255,0.08)',
+            transition: 'transform 0.3s ease, background 0.3s ease',
+            cursor: 'default',
+          }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.09)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.transform = 'none'; }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 14 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <div style={{ width: 44, height: 44, borderRadius: '50%', background: `${r.color}22`, border: `2px solid ${r.color}50`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '.82rem', color: r.color, flexShrink: 0 }}>
+                  {r.avatar}
+                </div>
+                <div>
+                  <div style={{ fontWeight: 700, fontSize: '.9rem', color: '#fff', display: 'flex', alignItems: 'center', gap: 6 }}>
+                    {r.name} <span>{r.country}</span>
+                  </div>
+                  <div style={{ fontSize: '.75rem', color: 'rgba(255,255,255,0.45)' }}>{r.role}</div>
+                </div>
+              </div>
+              <Stars n={r.rating} />
+            </div>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '.87rem', lineHeight: 1.75, margin: 0 }}>"{r.text}"</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="reveal" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 32, marginTop: 48, flexWrap: 'wrap' }}>
+        {['Featured on TechCrunch', 'Top App Vietnam 2025', 'Google AI Partner', 'Verified Reviews'].map(b => (
+          <div key={b} style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.35)', fontSize: '.82rem', fontWeight: 500 }}>
+            <span style={{ color: '#D4A017' }}>✦</span> {b}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 export default ReviewsSection;
