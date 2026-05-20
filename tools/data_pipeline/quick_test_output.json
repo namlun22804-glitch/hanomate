@@ -1,0 +1,933 @@
+[
+  {
+    "source": "instagram",
+    "vendor_name": "Bún chả Hương Liên",
+    "vendor_name_normalized": "bún chả hương liên",
+    "item_name": "general",
+    "price": 65000.0,
+    "rating": 4.8,
+    "address": "24 Lê Văn Hưu",
+    "raw_text": "🍜 Bún chả Hương Liên - nơi Obama đã ăn! Giá 65k/suất. 📍 24 Lê Văn Hưu #hanoifood #bunchaobanama",
+    "metadata": {
+      "post_id": "ig_mock_001",
+      "likes": 12500,
+      "comments": 340,
+      "location_name": "Bún chả Hương Liên",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "24 Lê Văn Hưu #hanoifood #bunchaobanama",
+    "vendor_name_normalized": "24 lê văn hưu hanoifood bunchaobanama",
+    "item_name": "general",
+    "price": 65000.0,
+    "rating": 4.8,
+    "address": "24 Lê Văn Hưu",
+    "raw_text": "🍜 Bún chả Hương Liên - nơi Obama đã ăn! Giá 65k/suất. 📍 24 Lê Văn Hưu #hanoifood #bunchaobanama",
+    "metadata": {
+      "post_id": "ig_mock_001",
+      "likes": 12500,
+      "comments": 340,
+      "location_name": "Bún chả Hương Liên",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Cà phê Giảng",
+    "vendor_name_normalized": "cà phê giảng",
+    "item_name": "general",
+    "price": 35000.0,
+    "rating": 4.8,
+    "address": "39 Nguyễn Hữu Huân",
+    "raw_text": "☕ Cà phê trứng Giảng siêu ngon! 35k/ly. Trải nghiệm must-try khi đến Hà Nội 📍 39 Nguyễn Hữu Huân #egocoffee #hanoicafe",
+    "metadata": {
+      "post_id": "ig_mock_002",
+      "likes": 8900,
+      "comments": 210,
+      "location_name": "Cà phê Giảng",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "39 Nguyễn Hữu Huân #egocoffee #hanoicafe",
+    "vendor_name_normalized": "39 nguyễn hữu huân egocoffee hanoicafe",
+    "item_name": "general",
+    "price": 35000.0,
+    "rating": 4.8,
+    "address": "39 Nguyễn Hữu Huân",
+    "raw_text": "☕ Cà phê trứng Giảng siêu ngon! 35k/ly. Trải nghiệm must-try khi đến Hà Nội 📍 39 Nguyễn Hữu Huân #egocoffee #hanoicafe",
+    "metadata": {
+      "post_id": "ig_mock_002",
+      "likes": 8900,
+      "comments": 210,
+      "location_name": "Cà phê Giảng",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Phở Thìn Lò Đúc",
+    "vendor_name_normalized": "phở thìn lò đúc",
+    "item_name": "general",
+    "price": 70000.0,
+    "rating": 4.8,
+    "address": "13 Lò Đúc",
+    "raw_text": "🍵 Phở Thìn Lò Đúc - phở ngon nhất Hà Nội theo mình! 70k/bát, đến sớm kẻo hết 📍 13 Lò Đúc #pho #hanoifood",
+    "metadata": {
+      "post_id": "ig_mock_003",
+      "likes": 15200,
+      "comments": 480,
+      "location_name": "Phở Thìn Lò Đúc",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Thìn Lò Đúc - phở ngon nhất Hà Nội theo m",
+    "vendor_name_normalized": "thìn lò đúc phở ngon nhất hà nội theo m",
+    "item_name": "general",
+    "price": 70000.0,
+    "rating": 4.8,
+    "address": "13 Lò Đúc",
+    "raw_text": "🍵 Phở Thìn Lò Đúc - phở ngon nhất Hà Nội theo mình! 70k/bát, đến sớm kẻo hết 📍 13 Lò Đúc #pho #hanoifood",
+    "metadata": {
+      "post_id": "ig_mock_003",
+      "likes": 15200,
+      "comments": 480,
+      "location_name": "Phở Thìn Lò Đúc",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "13 Lò Đúc #pho #hanoifood",
+    "vendor_name_normalized": "13 lò đúc pho hanoifood",
+    "item_name": "general",
+    "price": 70000.0,
+    "rating": 4.8,
+    "address": "13 Lò Đúc",
+    "raw_text": "🍵 Phở Thìn Lò Đúc - phở ngon nhất Hà Nội theo mình! 70k/bát, đến sớm kẻo hết 📍 13 Lò Đúc #pho #hanoifood",
+    "metadata": {
+      "post_id": "ig_mock_003",
+      "likes": 15200,
+      "comments": 480,
+      "location_name": "Phở Thìn Lò Đúc",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Cà phê Phố Cổ",
+    "vendor_name_normalized": "cà phê phố cổ",
+    "item_name": "general",
+    "price": 45000.0,
+    "rating": 4.8,
+    "address": "11 Hàng Gai, Hoàn Kiếm",
+    "raw_text": "🌅 Rooftop view đẹp mê hồn tại Cà phê Phố Cổ! 45k/ly cà phê. 📍 11 Hàng Gai #rooftopcafe #hanoiview",
+    "metadata": {
+      "post_id": "ig_mock_004",
+      "likes": 22000,
+      "comments": 620,
+      "location_name": "Cà phê Phố Cổ",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Cà phê Phố Cổ",
+    "vendor_name_normalized": "cà phê phố cổ",
+    "item_name": "general",
+    "price": 45000.0,
+    "rating": 4.8,
+    "address": "11 Hàng Gai, Hoàn Kiếm",
+    "raw_text": "🌅 Rooftop view đẹp mê hồn tại Cà phê Phố Cổ! 45k/ly cà phê. 📍 11 Hàng Gai #rooftopcafe #hanoiview",
+    "metadata": {
+      "post_id": "ig_mock_004",
+      "likes": 22000,
+      "comments": 620,
+      "location_name": "Cà phê Phố Cổ",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "11 Hàng Gai #rooftopcafe #hanoiview",
+    "vendor_name_normalized": "11 hàng gai rooftopcafe hanoiview",
+    "item_name": "general",
+    "price": 45000.0,
+    "rating": 4.8,
+    "address": "11 Hàng Gai, Hoàn Kiếm",
+    "raw_text": "🌅 Rooftop view đẹp mê hồn tại Cà phê Phố Cổ! 45k/ly cà phê. 📍 11 Hàng Gai #rooftopcafe #hanoiview",
+    "metadata": {
+      "post_id": "ig_mock_004",
+      "likes": 22000,
+      "comments": 620,
+      "location_name": "Cà phê Phố Cổ",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Bánh mì 25",
+    "vendor_name_normalized": "bánh mì 25",
+    "item_name": "general",
+    "price": 30000.0,
+    "rating": 4.8,
+    "address": "25 Hàng Cá",
+    "raw_text": "🥖 Bánh mì 25 Hàng Cá - giòn tan, nhân đầy! Chỉ 30k thôi 📍 25 Hàng Cá #banhmi #streetfoodhanoi",
+    "metadata": {
+      "post_id": "ig_mock_005",
+      "likes": 9300,
+      "comments": 180,
+      "location_name": "Bánh mì 25",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "25 Hàng Cá #banhmi #streetfoodhanoi",
+    "vendor_name_normalized": "25 hàng cá banhmi streetfoodhanoi",
+    "item_name": "general",
+    "price": 30000.0,
+    "rating": 4.8,
+    "address": "25 Hàng Cá",
+    "raw_text": "🥖 Bánh mì 25 Hàng Cá - giòn tan, nhân đầy! Chỉ 30k thôi 📍 25 Hàng Cá #banhmi #streetfoodhanoi",
+    "metadata": {
+      "post_id": "ig_mock_005",
+      "likes": 9300,
+      "comments": 180,
+      "location_name": "Bánh mì 25",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Bia Hơi Corner Tạ Hiện",
+    "vendor_name_normalized": "bia hơi corner tạ hiện",
+    "item_name": "general",
+    "price": 8000.0,
+    "rating": 4.8,
+    "address": "Tạ Hiện, Hoàn Kiếm",
+    "raw_text": "🍺 Bia hơi Tạ Hiện về đêm! 8k/cốc bia hơi tươi, atmosphere siêu vui 📍 Tạ Hiện & Lương Ngọc Quyến #biahoi #hanoinight",
+    "metadata": {
+      "post_id": "ig_mock_006",
+      "likes": 18500,
+      "comments": 890,
+      "location_name": "Bia Hơi Corner Tạ Hiện",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Tạ Hiện & Lương Ngọc Quyến #biahoi #hanoinight",
+    "vendor_name_normalized": "tạ hiện lương ngọc quyến biahoi hanoinight",
+    "item_name": "general",
+    "price": 8000.0,
+    "rating": 4.8,
+    "address": "Tạ Hiện, Hoàn Kiếm",
+    "raw_text": "🍺 Bia hơi Tạ Hiện về đêm! 8k/cốc bia hơi tươi, atmosphere siêu vui 📍 Tạ Hiện & Lương Ngọc Quyến #biahoi #hanoinight",
+    "metadata": {
+      "post_id": "ig_mock_006",
+      "likes": 18500,
+      "comments": 890,
+      "location_name": "Bia Hơi Corner Tạ Hiện",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Chả cá Lã Vọng",
+    "vendor_name_normalized": "chả cá lã vọng",
+    "item_name": "general",
+    "price": 350000.0,
+    "rating": 4.8,
+    "address": "14 Chả Cá, Hoàn Kiếm",
+    "raw_text": "🐟 Chả cá Lã Vọng - món đặc sản Hà Nội phải thử! 350k/phần, ăn với thì là và bún 📍 14 Chả Cá #chaca #hanoifood",
+    "metadata": {
+      "post_id": "ig_mock_007",
+      "likes": 7800,
+      "comments": 290,
+      "location_name": "Chả cá Lã Vọng",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "14 Chả Cá #chaca #hanoifood",
+    "vendor_name_normalized": "14 chả cá chaca hanoifood",
+    "item_name": "general",
+    "price": 350000.0,
+    "rating": 4.8,
+    "address": "14 Chả Cá, Hoàn Kiếm",
+    "raw_text": "🐟 Chả cá Lã Vọng - món đặc sản Hà Nội phải thử! 350k/phần, ăn với thì là và bún 📍 14 Chả Cá #chaca #hanoifood",
+    "metadata": {
+      "post_id": "ig_mock_007",
+      "likes": 7800,
+      "comments": 290,
+      "location_name": "Chả cá Lã Vọng",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Xôi Yến",
+    "vendor_name_normalized": "xôi yến",
+    "item_name": "general",
+    "price": 55000.0,
+    "rating": 4.8,
+    "address": "35B Nguyễn Hữu Huân",
+    "raw_text": "🍱 Xôi Yến - xôi ngon nức tiếng 35 Nguyễn Hữu Huân, 25-55k tùy loại #xoi #breakfast #hanoifood",
+    "metadata": {
+      "post_id": "ig_mock_008",
+      "likes": 5200,
+      "comments": 140,
+      "location_name": "Xôi Yến",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Hồ Hoàn Kiếm",
+    "vendor_name_normalized": "hồ hoàn kiếm",
+    "item_name": "general",
+    "price": 25000.0,
+    "rating": 4.8,
+    "address": "Đinh Tiên Hoàng, Hoàn Kiếm",
+    "raw_text": "🏮 Hồ Gươm buổi sáng sớm, đi bộ miễn phí + mua bánh mì ăn sáng 25k 📍 Hồ Hoàn Kiếm #hoankiem #morningwalk",
+    "metadata": {
+      "post_id": "ig_mock_009",
+      "likes": 31000,
+      "comments": 750,
+      "location_name": "Hồ Hoàn Kiếm",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Hồ Hoàn Kiếm #hoankiem #morningwalk",
+    "vendor_name_normalized": "hồ hoàn kiếm hoankiem morningwalk",
+    "item_name": "general",
+    "price": 25000.0,
+    "rating": 4.8,
+    "address": "Đinh Tiên Hoàng, Hoàn Kiếm",
+    "raw_text": "🏮 Hồ Gươm buổi sáng sớm, đi bộ miễn phí + mua bánh mì ăn sáng 25k 📍 Hồ Hoàn Kiếm #hoankiem #morningwalk",
+    "metadata": {
+      "post_id": "ig_mock_009",
+      "likes": 31000,
+      "comments": 750,
+      "location_name": "Hồ Hoàn Kiếm",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "Bún bò Nam Bộ Lê Văn Hưu",
+    "vendor_name_normalized": "bún bò nam bộ lê văn hưu",
+    "item_name": "general",
+    "price": 60000.0,
+    "rating": 4.5,
+    "address": "67 Lê Văn Hưu",
+    "raw_text": "🍜 Bún bò Nam Bộ Lê Văn Hưu - bún trộn kiểu miền Nam ngon đến bất ngờ! 60k/tô 📍 67 Lê Văn Hưu #bunbo #noodles",
+    "metadata": {
+      "post_id": "ig_mock_010",
+      "likes": 4600,
+      "comments": 95,
+      "location_name": "Bún bò Nam Bộ Lê Văn Hưu",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "instagram",
+    "vendor_name": "67 Lê Văn Hưu #bunbo #noodles",
+    "vendor_name_normalized": "67 lê văn hưu bunbo noodles",
+    "item_name": "general",
+    "price": 60000.0,
+    "rating": 4.5,
+    "address": "67 Lê Văn Hưu",
+    "raw_text": "🍜 Bún bò Nam Bộ Lê Văn Hưu - bún trộn kiểu miền Nam ngon đến bất ngờ! 60k/tô 📍 67 Lê Văn Hưu #bunbo #noodles",
+    "metadata": {
+      "post_id": "ig_mock_010",
+      "likes": 4600,
+      "comments": 95,
+      "location_name": "Bún bò Nam Bộ Lê Văn Hưu",
+      "hashtags": [],
+      "is_mock": false
+    },
+    "scraped_at": "2026-05-20T13:49:01.322186+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Bun cha Huong Lien",
+    "vendor_name_normalized": "bun cha huong lien",
+    "item_name": "Bun cha thuong",
+    "price": 65000,
+    "rating": 4.9,
+    "address": "24 Le Van Huu, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0218,
+      "lng": 105.8524
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 2840,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Bun cha Huong Lien",
+    "vendor_name_normalized": "bun cha huong lien",
+    "item_name": "Bun cha dac biet",
+    "price": 80000,
+    "rating": 4.9,
+    "address": "24 Le Van Huu, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0218,
+      "lng": 105.8524
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 2840,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Bun cha Huong Lien",
+    "vendor_name_normalized": "bun cha huong lien",
+    "item_name": "Nem ran",
+    "price": 15000,
+    "rating": 4.9,
+    "address": "24 Le Van Huu, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0218,
+      "lng": 105.8524
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 2840,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Pho Thin Lo Duc",
+    "vendor_name_normalized": "pho thin lo duc",
+    "item_name": "Pho bo tai",
+    "price": 65000,
+    "rating": 4.8,
+    "address": "13 Lo Duc, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0245,
+      "lng": 105.8512
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 3120,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Pho Thin Lo Duc",
+    "vendor_name_normalized": "pho thin lo duc",
+    "item_name": "Pho bo chin",
+    "price": 65000,
+    "rating": 4.8,
+    "address": "13 Lo Duc, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0245,
+      "lng": 105.8512
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 3120,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Pho Thin Lo Duc",
+    "vendor_name_normalized": "pho thin lo duc",
+    "item_name": "Pho dac biet",
+    "price": 80000,
+    "rating": 4.8,
+    "address": "13 Lo Duc, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0245,
+      "lng": 105.8512
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 3120,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Ca phe Giang",
+    "vendor_name_normalized": "ca phe giang",
+    "item_name": "Ca phe trung nong",
+    "price": 35000,
+    "rating": 4.8,
+    "address": "39 Nguyen Huu Huan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0341,
+      "lng": 105.8521
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 5230,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Ca phe Giang",
+    "vendor_name_normalized": "ca phe giang",
+    "item_name": "Ca phe trung da",
+    "price": 40000,
+    "rating": 4.8,
+    "address": "39 Nguyen Huu Huan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0341,
+      "lng": 105.8521
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 5230,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Ca phe Giang",
+    "vendor_name_normalized": "ca phe giang",
+    "item_name": "Ca phe den",
+    "price": 25000,
+    "rating": 4.8,
+    "address": "39 Nguyen Huu Huan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0341,
+      "lng": 105.8521
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 5230,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Banh mi 25",
+    "vendor_name_normalized": "banh mi 25",
+    "item_name": "Banh mi thit nguoi",
+    "price": 25000,
+    "rating": 4.8,
+    "address": "25 Hang Ca, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0353,
+      "lng": 105.8484
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 1890,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Banh mi 25",
+    "vendor_name_normalized": "banh mi 25",
+    "item_name": "Banh mi pate",
+    "price": 28000,
+    "rating": 4.8,
+    "address": "25 Hang Ca, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0353,
+      "lng": 105.8484
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 1890,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Banh mi 25",
+    "vendor_name_normalized": "banh mi 25",
+    "item_name": "Banh mi cha ca",
+    "price": 35000,
+    "rating": 4.8,
+    "address": "25 Hang Ca, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0353,
+      "lng": 105.8484
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 1890,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Cha ca La Vong",
+    "vendor_name_normalized": "cha ca la vong",
+    "item_name": "Cha ca 1 nguoi",
+    "price": 350000,
+    "rating": 4.7,
+    "address": "14 Cha Ca, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0349,
+      "lng": 105.8483
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 1560,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Cha ca La Vong",
+    "vendor_name_normalized": "cha ca la vong",
+    "item_name": "Cha ca 2 nguoi",
+    "price": 650000,
+    "rating": 4.7,
+    "address": "14 Cha Ca, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0349,
+      "lng": 105.8483
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 1560,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Xoi Yen",
+    "vendor_name_normalized": "xoi yen",
+    "item_name": "Xoi xeo",
+    "price": 25000,
+    "rating": 4.6,
+    "address": "35B Nguyen Huu Huan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0337,
+      "lng": 105.8519
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 980,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Xoi Yen",
+    "vendor_name_normalized": "xoi yen",
+    "item_name": "Xoi ga",
+    "price": 45000,
+    "rating": 4.6,
+    "address": "35B Nguyen Huu Huan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0337,
+      "lng": 105.8519
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 980,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Xoi Yen",
+    "vendor_name_normalized": "xoi yen",
+    "item_name": "Xoi thit kho",
+    "price": 40000,
+    "rating": 4.6,
+    "address": "35B Nguyen Huu Huan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0337,
+      "lng": 105.8519
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 980,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Bun bo Nam Bo Le Van Huu",
+    "vendor_name_normalized": "bun bo nam bo le van huu",
+    "item_name": "Bun bo Nam Bo",
+    "price": 60000,
+    "rating": 4.6,
+    "address": "67 Le Van Huu, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0214,
+      "lng": 105.852
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 720,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Bun bo Nam Bo Le Van Huu",
+    "vendor_name_normalized": "bun bo nam bo le van huu",
+    "item_name": "Bun bo dac biet",
+    "price": 75000,
+    "rating": 4.6,
+    "address": "67 Le Van Huu, Hai Ba Trung",
+    "coordinates": {
+      "lat": 21.0214,
+      "lng": 105.852
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 720,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Pho Bat Dan",
+    "vendor_name_normalized": "pho bat dan",
+    "item_name": "Pho ga",
+    "price": 55000,
+    "rating": 4.7,
+    "address": "49 Bat Dan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0346,
+      "lng": 105.8489
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 2100,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Pho Bat Dan",
+    "vendor_name_normalized": "pho bat dan",
+    "item_name": "Pho bo",
+    "price": 60000,
+    "rating": 4.7,
+    "address": "49 Bat Dan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0346,
+      "lng": 105.8489
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 2100,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.204749+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Pho Bat Dan",
+    "vendor_name_normalized": "pho bat dan",
+    "item_name": "Pho dac biet",
+    "price": 75000,
+    "rating": 4.7,
+    "address": "49 Bat Dan, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.0346,
+      "lng": 105.8489
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 2100,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Quan an Ngon",
+    "vendor_name_normalized": "quan an ngon",
+    "item_name": "Pho bo",
+    "price": 80000,
+    "rating": 4.5,
+    "address": "18 Phan Boi Chau, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.027,
+      "lng": 105.845
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 3400,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Quan an Ngon",
+    "vendor_name_normalized": "quan an ngon",
+    "item_name": "Bun cha",
+    "price": 75000,
+    "rating": 4.5,
+    "address": "18 Phan Boi Chau, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.027,
+      "lng": 105.845
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 3400,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Quan an Ngon",
+    "vendor_name_normalized": "quan an ngon",
+    "item_name": "Com rang",
+    "price": 65000,
+    "rating": 4.5,
+    "address": "18 Phan Boi Chau, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.027,
+      "lng": 105.845
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 3400,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Ca phe Pho Co",
+    "vendor_name_normalized": "ca phe pho co",
+    "item_name": "Ca phe den da",
+    "price": 35000,
+    "rating": 4.7,
+    "address": "11 Hang Gai, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.034,
+      "lng": 105.8498
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 4500,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Ca phe Pho Co",
+    "vendor_name_normalized": "ca phe pho co",
+    "item_name": "Ca phe sua da",
+    "price": 40000,
+    "rating": 4.7,
+    "address": "11 Hang Gai, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.034,
+      "lng": 105.8498
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 4500,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  },
+  {
+    "source": "shopeefood",
+    "vendor_name": "Ca phe Pho Co",
+    "vendor_name_normalized": "ca phe pho co",
+    "item_name": "Sinh to xoai",
+    "price": 55000,
+    "rating": 4.7,
+    "address": "11 Hang Gai, Hoan Kiem",
+    "coordinates": {
+      "lat": 21.034,
+      "lng": 105.8498
+    },
+    "raw_text": "",
+    "metadata": {
+      "total_reviews": 4500,
+      "is_mock": true
+    },
+    "scraped_at": "2026-05-20T13:49:02.205286+00:00"
+  }
+]
